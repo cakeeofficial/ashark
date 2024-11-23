@@ -1,0 +1,1 @@
+let startTouchY=0;document.addEventListener("touchstart",function(e){startTouchY=e.touches[0].clientY},false);document.addEventListener("touchmove",function(e){let t=e.touches[0].clientY;let o=startTouchY-t;if(o>50){document.querySelector(".navbar-toggler").style.display="block"}else if(o<-50){document.querySelector(".navbar-toggler").style.display="none"}},false);
